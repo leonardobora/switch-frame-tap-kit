@@ -1,0 +1,16 @@
+Switch Frame Tap 0.7.19 - Windows viewer. GPL-2.0, https://github.com/TomasUribe/switch-frame-tap
+
+It ships these libraries, unmodified, as DLLs:
+  SDL2.dll                2.32.10   zlib license   https://github.com/libsdl-org/SDL
+  libusb-1.0.dll          1.0.30    LGPL-2.1       https://github.com/libusb/libusb
+
+FFmpeg 8.1 (libavcodec, libavformat, libavutil; LGPL-2.1+, https://ffmpeg.org) is
+built into SwitchFrameTap.exe, configured with only the H.264 decoder, the AAC
+encoder and the MP4 muxer (tools/raw-recv/build-ffmpeg-min.sh in the source).
+FFmpeg's source is at https://ffmpeg.org/releases/ffmpeg-8.1.tar.xz; this
+program's full source, with the build scripts to relink it against another
+FFmpeg, is at the address above (GPL-2.0).
+
+The menu's text is drawn from DejaVu Sans and DejaVu Sans Bold glyphs built
+into SwitchFrameTap.exe (Bitstream Vera licence, DejaVu changes public domain;
+DejaVu-fonts.txt).
